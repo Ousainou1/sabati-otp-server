@@ -34,7 +34,7 @@ app.post("/send-otp", async (req, res) => {
   const otp = Math.floor(100000 + Math.random() * 900000).toString();
   otpStore.set(phone, otp);
 
-  const message = Your Sabati verification code is: ${otp};
+  const message = 'Your Sabati verification code is: ${otp}';
 
   try {
     const response = await axios.post(
