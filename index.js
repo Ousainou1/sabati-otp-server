@@ -77,5 +77,5 @@ app.post("/verify-otp", (req, res) => {
 
 // ✅ Start server (VERY IMPORTANT)
 app.listen(PORT, () => {
-  console.log(Server running on port ${PORT});
+  console.log('Server running on port ${PORT}');
 });
